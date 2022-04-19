@@ -136,7 +136,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 123.56" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="41Z-9x-hnw">
                                         <rect key="frame" x="0.0" y="46.5" width="414" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -181,6 +181,7 @@
                         <outlet property="tenPctButton" destination="Wk5-Hn-wbi" id="Aqo-Jk-Yhn"/>
                         <outlet property="twentyPctButton" destination="5f3-eu-tSs" id="uLu-8q-DfL"/>
                         <outlet property="zeroPctButton" destination="kGV-77-bCF" id="v64-Ds-N6X"/>
+                        <segue destination="4gG-8U-3A9" kind="presentation" identifier="gotoCal" id="Aih-x3-gsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -190,7 +191,7 @@
         <!--Results View Controller-->
         <scene sceneID="i1c-je-Txo">
             <objects>
-                <viewController id="4gG-8U-3A9" customClass="ResultsViewController" customModule="TipsyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="4gG-8U-3A9" customClass="ResultsViewController" customModule="TipsyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwg-K8-f23">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
